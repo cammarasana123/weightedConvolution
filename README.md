@@ -33,11 +33,13 @@ We suggest to start your tests with the proposed density function values:
 - *den = [0.3, 1.5]* for 5 x 5 kernel
 - *den = [0.06, 1.2, 1.6]* for 7 x 7 kernel
 
+These values can be applied for both 2D and 3D convolution with density function.
+
 **Optimal values could be different for your application and can be fine-tuned by the user.**
 
 You can check our optimal values on our reference paper. For examples, the optimal density function for low-complexity problems and 3 x 3 kernels is *den = [1.5]*
 
-These values can be applied for both 2D and 3D convolution with density function.
+
 
 ## Test files
 The *single test* file allows the user to test the convolution with density function and compare the results with torch.nn convolution. We underline that
