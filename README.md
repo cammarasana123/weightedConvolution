@@ -2,7 +2,7 @@
 We propose our convolution for 2D and 3D images with density function.
 
 ## Use
-Import the dConv2D and dConv3D functions. 
+Import the dConv2D and dConv3D functions from the dConv.py file. 
 
 You can call the dConv2D function through:
 >out2d = dConv2D(I2d, filters, density, kernel_size, padding_size, stride_size, bias)
