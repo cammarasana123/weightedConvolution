@@ -1,5 +1,5 @@
 # Density convolution
-We propose our convolution for 2D and 3D images with density function.
+We propose our convolution with density function for 2D and 3D images.
 
 ## Use
 Import the dConv2D and dConv3D functions from the dConv.py file. 
