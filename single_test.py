@@ -23,7 +23,7 @@ den = [1.0]
 
 d_out2d = dConv2D(I2d,f,den,kernel_size,padding_size,stride_size,bi)
 out2d = conv(I2d)
-print('max abs error 2D:', (d_out2d - out2d).abs().max())
+print('max abs error 2D:', (d_out2d - out2d).abs().max().item())
 
 
 batch = 3
@@ -44,4 +44,4 @@ den = [1.0,1.0]
 d_out3d = dConv3D(I3d,f,den,kernel_size,padding_size,stride_size)
 out3d = conv(I3d)
 
-print('max abs error 3D:', (d_out3d - out3d).abs().max())
+print('max abs error 3D:', (d_out3d - out3d).abs().max().item())
