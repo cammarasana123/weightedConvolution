@@ -27,13 +27,13 @@ where:
 - out: convolved 3D image
 
 ## Density function values
-We suggest to test our proposed density function values, i.e.,:
+We suggest to start your tests with the proposed density function values:
 
 - *den = [0.5]* for 3 x 3 kernel
 - *den = [0.3, 1.5]* for 5 x 5 kernel
 - *den = [0.06, 1.2, 1.6]* for 7 x 7 kernel
 
-However, optimal values could be different for your application and can be fine-tuned by the user.
+However, optimal values could be different for your application and can be fine-tuned by the user. You can check our optimal values on our reference paper.
 
 These values can be applied for both 2D and 3D convolution with density function.
 
