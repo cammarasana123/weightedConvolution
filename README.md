@@ -37,7 +37,7 @@ These values can be applied for both 2D and 3D convolution with density function
 
 **Optimal values could be different for your application and can be fine-tuned by the user.**
 
-You can check our optimal values on our reference paper. For examples, the optimal density function for low-complexity problems and 3 x 3 kernels is *den = [1.5]*
+You can check our optimal values on the reference paper.
 
 
 
