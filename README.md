@@ -49,3 +49,5 @@ The *learning* file implements a minimal learning model applying the convolution
 
 ## Requirements
 Python, PyTorch
+
+Tested with: Python 3.11.10, PyTorch 2.6.0
