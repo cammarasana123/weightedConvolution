@@ -22,7 +22,7 @@ class dModel(nn.Module):
         patches = imageX.unfold(2, kh, dh).unfold(3, kw, dw)
         patches = patches.contiguous().view(batch_size, channels, -1, kh, kw)
         patches = patches.permute(0, 2, 1, 3, 4)
-        kx = torch.cat([torch.tensor(den),torch.tensor([1.0]),torch.flip(torch.tensor(den), dims=[0]) ])
+        kx = torch.cat([torch.tensor(den, device=I.device), torch.tensor([1.0], device=I.device), torch.flip(torch.tensor(den, device=I.device), dims=[0])])
         ky = kx.reshape(-1,1)
         patchesX = patches.unsqueeze(2)
         filtX = f.unsqueeze(0).unsqueeze(1)
