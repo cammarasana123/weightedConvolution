@@ -5,7 +5,7 @@ We propose our convolution with density function for 2D and 3D images.
 Import the dConv2D and dConv3D functions from the dConv.py file. 
 
 You can call the dConv2D function through:
->out2d = dConv2D(I2d, filters, density, kernel_size, padding_size, stride_size, bias)
+>out2d = dConv2D(I2d, filters, density, kernel_size, padding_size, stride_size, groups, bias)
 
 where:
 
@@ -16,7 +16,7 @@ where:
 - out: convolved 2D image
 
 You can call the dConv3D function through:
->out3d = dConv3D(I3d, filters, density, kernel_size, padding_size, stride_size, bias)
+>out3d = dConv3D(I3d, filters, density, kernel_size, padding_size, stride_size, groups, bias)
 
 where:
 
