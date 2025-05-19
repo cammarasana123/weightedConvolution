@@ -35,7 +35,7 @@ We suggest to start your tests with the proposed density function values:
 
 These values can be applied for both 2D and 3D convolution with density function.
 
-**Optimal values could be different for your application and can be fine-tuned by the user.**
+**Optimal values could be different for your application and can be fine-tuned by the user. They shall be treated as hyper-parameters. **
 
 You can check our optimal values on the reference paper.
 
