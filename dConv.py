@@ -36,7 +36,7 @@ def dConv2D(I,f,den,ksize,psize,ssize,grp=1,bias=None):
     patchesY_filtY = patchesY * filtY
     pYfY_1 = torch.sum(patchesY_filtY,4)
     grpBatch = (torch.arange(grp)).repeat_interleave(grp_ratio_out)
-    grpBatchView = grpBatch.view(1, 1, channels_out, 1, 1, 1).expand(pYfY_1.size(0), pYfY_1.size(1), -1, 1, pYfY_1.size(4), pYfY_1.size(5))
+    grpBatchView = grpBatch.view(1, 1, channels_out, 1, 1, 1).expand(pYfY_1.size(0), pYfY_1.size(1), -1, 1, pYfY_1.size(4), pYfY_1.size(5)).to(pYfY_1.device)
     pYfY_2 = pYfY_1.gather(dim=3, index=grpBatchView)
     patchesY_filt_weight1 = torch.matmul(kx,pYfY_2)
     patchesY_filt_weight2 = torch.matmul(patchesY_filt_weight1,ky)       
@@ -87,7 +87,7 @@ def dConv3D(I,f,den,ksize,psize,ssize,grp=1,bias=None):
     patchesY_filtY = patchesY * filtY
     pYfY_1 = torch.sum(patchesY_filtY,4)
     grpBatch = (torch.arange(grp)).repeat_interleave(grp_ratio_out)
-    grpBatchView = grpBatch.view(1, 1, channels_out, 1, 1, 1, 1).expand(pYfY_1.size(0), pYfY_1.size(1), -1, 1, pYfY_1.size(4), pYfY_1.size(5), pYfY_1.size(6))
+    grpBatchView = grpBatch.view(1, 1, channels_out, 1, 1, 1, 1).expand(pYfY_1.size(0), pYfY_1.size(1), -1, 1, pYfY_1.size(4), pYfY_1.size(5), pYfY_1.size(6)).to(pYfY_1.device)
     pYfY_2 = pYfY_1.gather(dim=3, index=grpBatchView)
     patchesY_filt_weight1 = torch.matmul(kx,pYfY_2)
     patchesY_filt_weight2 = torch.matmul(patchesY_filt_weight1,ky)
