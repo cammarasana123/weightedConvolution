@@ -45,7 +45,7 @@ You can check our optimal values on the reference paper.
 The *single test* file allows the user to test the convolution with density function and compare the results with torch.nn convolution. We underline that
 the results are the same when the density function values are equal to 1.
 
-The *learning* file implements a minimal learning model applying the convolution with density function.
+The *learning* file implements a minimal learning model applying the weighted convolution.
 
 ## Requirements
 Python, PyTorch
