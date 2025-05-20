@@ -1,4 +1,4 @@
-# Density convolution
+# Weighted convolution
 We propose our convolution with density function for 2D and 3D images.
 
 ## Use
