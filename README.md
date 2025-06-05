@@ -1,3 +1,9 @@
+# UPDATE
+
+The weighted convolution has been updated to version 2.0. Please refer to:
+
+>https://github.com/cammarasana123/weightedConvolution2.0
+
 # Weighted Convolution
 We propose our convolution with density function for 2D and 3D images.
 
